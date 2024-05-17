@@ -1,0 +1,35 @@
+<div class="planet-page">
+    <div class="planet-container">
+        <img src="{{ character.images.REGULAR.url }}" alt="Картинка" style="width: 100%;">
+        <div class="planet-info">
+            <h1>{{ character.label }}</h1>
+            <p><strong>Calories:</strong> {{ character.calories | number:'1.0-0' }} kcal</p>
+            <p><strong>Serves:</strong> {{ character.yield }}</p>
+            <p><strong>Diet labels:</strong> <span *ngFor="let label of character.dietLabels">{{ label }} </span></p>
+            <p><strong>Health labels:</strong> <li *ngFor="let label of character.healthLabels">{{ label }} </li>
+            </p>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li *ngFor="let ingredient of character.ingredientLines">{{ ingredient }}</li>
+            </ul>
+            <a style="justify-content: center; display: flex; margin-top: 30px;" href="{{ character.url }}" target="_blank" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="residents-container">
+        <h2>Starships</h2>
+        <div class="residents-list">
+            <h1 *ngIf="!starships">No Starships</h1>
+            <p *ngFor="let s of starships"><a style="color: aliceblue;" [routerLink]="['/starship', s.name]">{{ s.name }}</a>  </p>
+        </div>
+    </div>
+
+    <div class="films-container">
+        <h2>Films</h2>
+        <div class="films-list">
+            <h1 *ngIf="!films">No films</h1>
+            <p *ngFor="let f of films">{{ f.title }}</p>
+        </div>
+    </div> -->
+<!-- </div> -->

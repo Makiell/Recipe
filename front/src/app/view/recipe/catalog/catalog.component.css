@@ -1,0 +1,132 @@
+input[type="text"] {
+    border: solid 1px ;
+    padding: 15px;
+    border-radius: 18px;
+    margin-top: 1%;
+    margin-left: 2%;
+    color: #fff ;
+    width: 30%;
+    background-color: #1D1E1F;
+    box-shadow: 0 0px 30px rgba(255, 255, 255, 0.661);
+}
+
+input::placeholder {
+    color: rgb(243, 243, 243);
+    opacity: 1;
+}
+
+button {
+    background-color: #181720;
+    color: #fff;
+    border: 1px solid #333; 
+    padding: 15px 8px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #5d5d5e;
+}
+
+.bg {
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614796333_133-p-fon-dlya-menyu-kafe-195.jpg);
+    background-position: center;
+}
+
+.section{
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.site-footer {
+    background-image: url('https://kartinki.pics/uploads/posts/2021-07/1627173011_14-kartinkin-com-p-fon-dlya-menyu-vostochnoi-kukhni-krasivo-15.jpg');
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.title p {
+    font-size: 2em;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.star-wars {
+    position: relative;
+    perspective: 100px;
+    height: 150px;
+    overflow: hidden;
+    width: 50%;
+}
+
+.crawl {
+    position: absolute;
+    top: 100%;
+    animation: crawl 25s linear infinite;
+    transform-origin: 50% 100%;
+    /* transform: rotateX(10deg); */
+    
+}
+
+
+
+@keyframes crawl {
+    0% {
+        top: 190%;
+    }
+    100% {
+        top: -680%;
+    }
+}
+
+.footer-section,
+.footer-bottom {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-section h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #fff;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.crawl p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #9ba890;
+    font-size: 1.5em;
+}
+
+.footer-section a:hover {
+    color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+
+    .star-wars{
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+<div class="bg">
+    <div class="section">
+        <form style="justify-content: center; display: flex;">
+            <input type="text" placeholder="Start typing to find recipe" [(ngModel)]="text" [ngModelOptions]="{standalone: true}">
+        </form>
+        <section>
+            <router-outlet></router-outlet>
+        </section>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section star-wars">
+        <div class="crawl">
+          <div class="title">
+            <p>🍴 Welcome to Flavor Fusion! </p>
+          </div>
+          <p>Dive into our latest recipes and cooking tips! 🌟 | 🍰 Try our new 'Triple Chocolate Cheesecake' recipe – a hit at any party! 🎉 | 🍽️ Check out our 'Easy 30-Minute Meals' for quick and delicious options on busy days! | 🥗 Looking to eat healthier? Explore our 'Fresh and Light' section for nutritious and tasty dishes! | 🔥 Hot Tip: Add a pinch of salt to your coffee to enhance the flavor! | 📚 Learn new cooking techniques with our step-by-step guides and videos! | 🥘 Discover global cuisines in our 'World of Flavors' series each week! 🌍</p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Email: info&#64;recipes.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <p><a>Facebook</a></p>
+        <p><a>Twitter</a></p>
+        <p><a href="https://www.instagram.com/damir_mkll/">Instagram</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 Recipes | Designed by Mkll
+    </div>
+  </footer>
+

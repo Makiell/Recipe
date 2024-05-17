@@ -1,0 +1,30 @@
+<header class="site-header">
+  <div class="logo-container">
+    <img src="https://img.icons8.com/arcade/64/cooking-book.png" width="64" height="64"
+      alt="Star Wars Logo"  [routerLink]="['/']">
+  </div>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/forum']" (click)="scrollDown()">Forum</a>
+        <div class="dropdown">
+          <a [routerLink]="['/forum']" (click)="scrollDown()">View Posts</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/characters']" (click)="scrollDown()">Recipes</a>
+        <div class="dropdown">
+          <a [routerLink]="['/characters']" (click)="scrollDown()">View recipes</a>
+        </div>
+      </li>
+      <li class="nav-item" id="upper-header">
+        <a *ngIf="!isLoggedIn" class="nav-link" [routerLink]="['/login']">Log In</a>
+        <a *ngIf="isLoggedIn" class="nav-link" (click)="logout()">Log Out</a>
+      </li>
+
+    </ul>
+
+  </nav>
+</header>
+
+<router-outlet></router-outlet>
