@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
-import { CatalogComponent } from './view/startwars/catalog/catalog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule, ViewportScroller } from '@angular/common';
-import { HomeComponent } from './view/startwars/home/home.component';
 import { LoginComponent } from "./view/forum/login/login.component";
 import { AuthAPIServiceService } from './data/network/auth/service/auth-apiservice.service';
+import { CatalogComponent } from './view/recipe/catalog/catalog.component';
+import { HomeComponent } from './view/recipe/home/home.component';
 
 @Component({
   selector: 'app-root',

@@ -25,7 +25,7 @@ export class BottomPostsComponent {
   }
 
   like(post_id: number){
-    console.log(1)
-    this.bottomService.likePost(post_id).subscribe()
+    this.bottomService.likePost(post_id).subscribe(()=>this.service.getAllPosts().subscribe((data)=> this.posts = data))
+    
   }
 }

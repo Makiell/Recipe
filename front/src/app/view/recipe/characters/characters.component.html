@@ -1,6 +1,6 @@
 <div class="results" id="result">
 
-    <div *ngFor="let character of characters" class="planet-card" [routerLink]="['/character', character._links.self.href]">
+    <div *ngFor="let character of characters" class="planet-card" [routerLink]="['/recipe', character._links.self.href]">
         <img style="margin-left: 20%; border-radius: 5px;" src="{{character.recipe.images.SMALL.url}}">
         <h2 class="planet-name"> {{ character.recipe.label }}</h2>
         <p class="planet-property">Calories: {{ character.recipe.calories }} kkcal</p>

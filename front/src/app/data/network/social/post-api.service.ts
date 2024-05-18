@@ -18,7 +18,6 @@ export class PostAPIService {
       'title': title,
       'content': content
     }
-    console.log(payload);
     
     const headers = new HttpHeaders().set(AuthHeaders.COMMENT_AUTH, AuthHeaders.COMMENT_AUTH)
     return this.http.post(`${BASE_URL}social/post/`, payload, {

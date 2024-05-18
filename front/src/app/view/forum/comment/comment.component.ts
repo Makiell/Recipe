@@ -19,7 +19,7 @@ import { USER_ID } from '../../../data/network/constant';
 export class CommentComponent {
 
   comments?: Comment[]
-  post?: number
+  post!: number
   userId?: number
 
 
@@ -36,6 +36,7 @@ export class CommentComponent {
   }
 
   deleteComment(commentId: number) {
-    this.service.deleteComment(commentId).subscribe()
+    this.service.deleteComment(commentId).subscribe(()=>this.service.getAllComments(this.post).subscribe((data)=>
+      this.comments = data))
   }
 }
